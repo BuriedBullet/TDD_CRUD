@@ -16,5 +16,14 @@ class Home extends CI_Controller {
         $this->load->view("template/footer", $data, false);
     }
 
+    public function teste_funcoes()
+    {
+        $data["teste"] = $this->m_home->monta_lista_teste();
+
+        $this->load->view("template/header", $data, false);
+        $this->load->view("home/lista_teste", $data, false);
+        $this->load->view("template/footer", $data, false);
+    }
+
 
 }

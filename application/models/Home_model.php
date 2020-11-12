@@ -9,13 +9,25 @@ class Home_Model extends CI_Model{
 
     public function get_filmes()
     {
-        return (object)array("aa" => "aaa");
+        return new stdClass(array("aa" => "aaa"));
     }
 
     public function test_type_return_get_filmes()
     {
-        return $this->unit->run(gettype ($this->get_filmes()), object, "Retorna get_filmes", "Verificação de retorno da função");
+        // echo '<pre>';
+        // print_r(gettype ($this->get_filmes()));
+        // echo '</pre>';
+        // exit;
+        return $this->unit->run(gettype ($this->get_filmes()), "object", "Retorna get_filmes", "Verificação de retorno da função");
     }
 
+    public function monta_lista_teste()
+    {
+        $rst = array();
+
+        $rst[] = $this->test_type_return_get_filmes();
+
+        return $rst;
+    }
 
 }

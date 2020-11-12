@@ -4,7 +4,16 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+      <!-- Bootstrap core CSS -->
+      <link href="<?= base_url("assets/mdb/css/bootstrap.min.css") ?>" rel="stylesheet">
+      <!-- Material Design Bootstrap -->
+      <link href="<?= base_url("assets/mdb/css/mdb.min.css") ?>" rel="stylesheet">
+      <!-- Your custom styles (optional) -->
+      <link href="<?= base_url("assets/mdb/css/style.min.css") ?>" rel="stylesheet">
+      
+      <link href="<?= base_url("assets/mdb/css/addons/datatables.min.css") ?>" rel="stylesheet">
 
       <title>Teste de CRUD!</title>
   </head>
@@ -23,16 +32,8 @@
           <li class="nav-item">
             <a class="nav-link" href="cadastro.php">Inserir Filme</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= base_url("Home/teste_funcoes") ?>">Testes de Funções</a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
