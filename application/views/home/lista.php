@@ -11,14 +11,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4 col-xs-12">
-            <div class="card">
-                <h5 class="card-header">Featured</h5>
-                <div class="card-body">
-                    <?= $aa ?>
-                </div>
-            </div>
-        </div>
     </div>
 </div>
     
